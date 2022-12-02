@@ -1,0 +1,1049 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Nov  1 09:38:57 2022
+# Process ID: 22424
+# Current directory: C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.runs/synth_1
+# Command line: vivado.exe -log Top_Student.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_Student.tcl
+# Log file: C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.runs/synth_1/Top_Student.vds
+# Journal file: C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Top_Student.tcl -notrace
+Command: synth_design -top Top_Student -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 22240 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 377.246 ; gain = 120.641
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top_Student' [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:18]
+	Parameter m_20khz bound to: 2499 - type: integer 
+	Parameter m_6p25Mhz bound to: 7 - type: integer 
+	Parameter m_25hz bound to: 32'b00000000000111101000010001111111 
+	Parameter m_1hz bound to: 32'b00000010111110101111000001111111 
+	Parameter m_200hz bound to: 24999 - type: integer 
+	Parameter m_0p16hz bound to: 7999999 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Get_Clock' [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Get_Clock.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Get_Clock' (1#1) [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Get_Clock.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Debounce_Button' [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Debounce_Button.v:24]
+INFO: [Synth 8-6157] synthesizing module 'DFF' [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/DFF.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DFF' (2#1) [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/DFF.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Debounce_Button' (3#1) [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Debounce_Button.v:24]
+INFO: [Synth 8-6157] synthesizing module 'Audio_Capture' [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Audio_Capture.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'Audio_Capture' (4#1) [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Audio_Capture.v:25]
+INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:36]
+	Parameter Width bound to: 96 - type: integer 
+	Parameter Height bound to: 64 - type: integer 
+	Parameter PixelCount bound to: 6144 - type: integer 
+	Parameter PixelCountWidth bound to: 13 - type: integer 
+	Parameter ClkFreq bound to: 6250000 - type: integer 
+	Parameter FrameFreq bound to: 60 - type: integer 
+	Parameter FrameDiv bound to: 104166 - type: integer 
+	Parameter FrameDivWidth bound to: 17 - type: integer 
+	Parameter PowerDelay bound to: 20 - type: integer 
+	Parameter ResetDelay bound to: 3 - type: integer 
+	Parameter VccEnDelay bound to: 20 - type: integer 
+	Parameter StartupCompleteDelay bound to: 100 - type: integer 
+	Parameter MaxDelay bound to: 100 - type: integer 
+	Parameter MaxDelayCount bound to: 625000 - type: integer 
+	Parameter StateCount bound to: 32 - type: integer 
+	Parameter StateWidth bound to: 5 - type: integer 
+	Parameter PowerUp bound to: 5'b00000 
+	Parameter Reset bound to: 5'b00001 
+	Parameter ReleaseReset bound to: 5'b00011 
+	Parameter EnableDriver bound to: 5'b00010 
+	Parameter DisplayOff bound to: 5'b00110 
+	Parameter SetRemapDisplayFormat bound to: 5'b00111 
+	Parameter SetStartLine bound to: 5'b00101 
+	Parameter SetOffset bound to: 5'b00100 
+	Parameter SetNormalDisplay bound to: 5'b01100 
+	Parameter SetMultiplexRatio bound to: 5'b01101 
+	Parameter SetMasterConfiguration bound to: 5'b01111 
+	Parameter DisablePowerSave bound to: 5'b01110 
+	Parameter SetPhaseAdjust bound to: 5'b01010 
+	Parameter SetDisplayClock bound to: 5'b01011 
+	Parameter SetSecondPrechargeA bound to: 5'b01001 
+	Parameter SetSecondPrechargeB bound to: 5'b01000 
+	Parameter SetSecondPrechargeC bound to: 5'b11000 
+	Parameter SetPrechargeLevel bound to: 5'b11001 
+	Parameter SetVCOMH bound to: 5'b11011 
+	Parameter SetMasterCurrent bound to: 5'b11010 
+	Parameter SetContrastA bound to: 5'b11110 
+	Parameter SetContrastB bound to: 5'b11111 
+	Parameter SetContrastC bound to: 5'b11101 
+	Parameter DisableScrolling bound to: 5'b11100 
+	Parameter ClearScreen bound to: 5'b10100 
+	Parameter VccEn bound to: 5'b10101 
+	Parameter DisplayOn bound to: 5'b10111 
+	Parameter PrepareNextFrame bound to: 5'b10110 
+	Parameter SetColAddress bound to: 5'b10010 
+	Parameter SetRowAddress bound to: 5'b10011 
+	Parameter WaitNextFrame bound to: 5'b10001 
+	Parameter SendPixel bound to: 5'b10000 
+	Parameter SpiCommandMaxWidth bound to: 40 - type: integer 
+	Parameter SpiCommandBitCountWidth bound to: 6 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:124]
+INFO: [Synth 8-226] default block is never used [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:201]
+WARNING: [Synth 8-693] zero replication count - replication ignored [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:349]
+INFO: [Synth 8-6155] done synthesizing module 'Oled_Display' (5#1) [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:36]
+WARNING: [Synth 8-689] width (32) of port connection 'teststate' does not match port width (5) of module 'Oled_Display' [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:94]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:94]
+WARNING: [Synth 8-6090] variable 'current' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:117]
+WARNING: [Synth 8-6090] variable 'current' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:120]
+INFO: [Synth 8-6157] synthesizing module 'Display_Menu' [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Display_Menu.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Display_Menu.v:45]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Display_Menu.v:374]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Display_Menu.v:703]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Display_Menu.v:1035]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Display_Menu.v:1425]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Display_Menu.v:1816]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Display_Menu.v:2209]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Display_Menu.v:2309]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Display_Menu.v:2505]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Display_Menu.v:2801]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Display_Menu.v:3135]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Display_Menu.v:3467]
+WARNING: [Synth 8-6014] Unused sequential element char_count_reg was removed.  [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Display_Menu.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'Display_Menu' (6#1) [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Display_Menu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Oled_Task_A' [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Task_A.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'Oled_Task_A' (7#1) [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Task_A.v:25]
+INFO: [Synth 8-6157] synthesizing module 'Oled_Task_B' [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Task_B.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Oled_Task_B' (8#1) [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Task_B.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Audio_Volume_Indicator' [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Audio_Volume_Indicator.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'Audio_Volume_Indicator' (9#1) [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Audio_Volume_Indicator.v:26]
+INFO: [Synth 8-6157] synthesizing module 'Calibrate_Frequency' [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Calibrate_Frequency.v:23]
+	Parameter amp_zeropoint bound to: 12'b110000000000 
+WARNING: [Synth 8-6014] Unused sequential element time_prev_sample_reg was removed.  [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Calibrate_Frequency.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'Calibrate_Frequency' (10#1) [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Calibrate_Frequency.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Settings_Display' [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Settings_Display.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Settings_Display.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'Settings_Display' (11#1) [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Settings_Display.v:23]
+INFO: [Synth 8-6157] synthesizing module 'QR_Code' [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/QR_Code.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/QR_Code.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'QR_Code' (12#1) [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/QR_Code.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Traffic_Junction' [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Traffic_Junction.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Traffic_Detector' [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Traffic_Detector.v:25]
+	Parameter THRESHOLD bound to: 12'b110110101100 
+INFO: [Synth 8-6155] done synthesizing module 'Traffic_Detector' (13#1) [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Traffic_Detector.v:25]
+INFO: [Synth 8-6157] synthesizing module 'Traffic_Light_Control' [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Traffic_Light_Control.v:30]
+WARNING: [Synth 8-6090] variable 'an' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Traffic_Light_Control.v:141]
+WARNING: [Synth 8-6090] variable 'seg' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Traffic_Light_Control.v:142]
+WARNING: [Synth 8-6090] variable 'an' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Traffic_Light_Control.v:153]
+WARNING: [Synth 8-6090] variable 'seg' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Traffic_Light_Control.v:154]
+WARNING: [Synth 8-6090] variable 'an' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Traffic_Light_Control.v:160]
+WARNING: [Synth 8-6090] variable 'seg' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Traffic_Light_Control.v:161]
+WARNING: [Synth 8-6090] variable 'an' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Traffic_Light_Control.v:167]
+WARNING: [Synth 8-6090] variable 'seg' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Traffic_Light_Control.v:168]
+INFO: [Synth 8-6155] done synthesizing module 'Traffic_Light_Control' (14#1) [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Traffic_Light_Control.v:30]
+WARNING: [Synth 8-350] instance 'traffic_light_control' of module 'Traffic_Light_Control' requires 16 connections, but only 15 given [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Traffic_Junction.v:57]
+INFO: [Synth 8-6157] synthesizing module 'Traffic_Light_Simulation' [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Traffic_Light_Simulation.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Traffic_Light_Simulation.v:75]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Traffic_Light_Simulation.v:6224]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Traffic_Light_Simulation.v:6288]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Traffic_Light_Simulation.v:6751]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Traffic_Light_Simulation.v:7221]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Traffic_Light_Simulation.v:7696]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Traffic_Light_Simulation.v:7959]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Traffic_Light_Simulation.v:8222]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Traffic_Light_Simulation.v:8287]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Traffic_Light_Simulation.v:8352]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Traffic_Light_Simulation.v:8555]
+WARNING: [Synth 8-6014] Unused sequential element y_pos_reg was removed.  [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Traffic_Light_Simulation.v:73]
+WARNING: [Synth 8-6014] Unused sequential element x_pos_reg was removed.  [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Traffic_Light_Simulation.v:74]
+WARNING: [Synth 8-6014] Unused sequential element new_index_reg was removed.  [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Traffic_Light_Simulation.v:7695]
+INFO: [Synth 8-6155] done synthesizing module 'Traffic_Light_Simulation' (15#1) [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Traffic_Light_Simulation.v:23]
+WARNING: [Synth 8-350] instance 'traffic_light_simulation' of module 'Traffic_Light_Simulation' requires 13 connections, but only 12 given [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Traffic_Junction.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'Traffic_Junction' (16#1) [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Traffic_Junction.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Student' (17#1) [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:18]
+WARNING: [Synth 8-3331] design Traffic_Light_Simulation has unconnected port clk_1hz
+WARNING: [Synth 8-3331] design Traffic_Light_Simulation has unconnected port light_counter
+WARNING: [Synth 8-3331] design Traffic_Light_Control has unconnected port clk_3hz
+WARNING: [Synth 8-3331] design Calibrate_Frequency has unconnected port CLK_100MHZ
+WARNING: [Synth 8-3331] design Top_Student has unconnected port JC[2]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[13]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[12]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[11]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[10]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[9]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[8]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[6]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[5]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[4]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 547.059 ; gain = 290.453
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 547.059 ; gain = 290.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 547.059 ; gain = 290.453
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/constrs_1/new/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/constrs_1/new/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/constrs_1/new/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_Student_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_Student_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 900.676 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 900.688 ; gain = 644.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 900.688 ; gain = 644.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 900.688 ; gain = 644.082
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "output_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Oled_Display'
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "fsm_next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "oled_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "oled_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "oled_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "count_3s0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "count_3s0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "count_5s0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "count_5s0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "maxNoise" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "LD" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "maxNoise" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "LD" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "LD" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LD" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element oled_data_reg was removed.  [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Settings_Display.v:33]
+WARNING: [Synth 8-6014] Unused sequential element oled_data_reg was removed.  [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/QR_Code.v:31]
+INFO: [Synth 8-5545] ROM "count0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "maxAmp" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "emergency" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "an" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "seg" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5544] ROM "current0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 PowerUp | 00000000100000000000000000000000 |                            00000
+                   Reset | 00000000000100000000000000000000 |                            00001
+            ReleaseReset | 00000000000000000000100000000000 |                            00011
+            EnableDriver | 00000000000000000001000000000000 |                            00010
+              DisplayOff | 00000000000000000100000000000000 |                            00110
+   SetRemapDisplayFormat | 00000100000000000000000000000000 |                            00111
+            SetStartLine | 00001000000000000000000000000000 |                            00101
+               SetOffset | 10000000000000000000000000000000 |                            00100
+        SetNormalDisplay | 00000000000000000000000010000000 |                            01100
+       SetMultiplexRatio | 00000000000000000000000000100000 |                            01101
+  SetMasterConfiguration | 00000000000000000000000001000000 |                            01111
+        DisablePowerSave | 00000000000000000000000000000100 |                            01110
+          SetPhaseAdjust | 00000000000000000000000000001000 |                            01010
+         SetDisplayClock | 00000000001000000000000000000000 |                            01011
+     SetSecondPrechargeA | 00000000010000000000000000000000 |                            01001
+     SetSecondPrechargeB | 01000000000000000000000000000000 |                            01000
+     SetSecondPrechargeC | 00000010000000000000000000000000 |                            11000
+       SetPrechargeLevel | 00000001000000000000000000000000 |                            11001
+                SetVCOMH | 00000000000000010000000000000000 |                            11011
+        SetMasterCurrent | 00000000000000100000000000000000 |                            11010
+            SetContrastA | 00000000000001000000000000000000 |                            11110
+            SetContrastB | 00100000000000000000000000000000 |                            11111
+            SetContrastC | 00000000000000000000000000000001 |                            11101
+        DisableScrolling | 00000000000000000000000000000010 |                            11100
+             ClearScreen | 00000000000000000000000000010000 |                            10100
+                   VccEn | 00010000000000000000000000000000 |                            10101
+               DisplayOn | 00000000000010000000000000000000 |                            10111
+        PrepareNextFrame | 00000000000000001000000000000000 |                            10110
+           SetColAddress | 00000000000000000000010000000000 |                            10010
+           SetRowAddress | 00000000000000000000000100000000 |                            10011
+           WaitNextFrame | 00000000000000000000001000000000 |                            10001
+               SendPixel | 00000000000000000010000000000000 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'Oled_Display'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:16 ; elapsed = 00:01:19 . Memory (MB): peak = 900.688 ; gain = 644.082
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |Top_Student__GB0 |           1|     47402|
+|2     |Top_Student__GB1 |           1|      9648|
+|3     |Top_Student__GB2 |           1|     16462|
+|4     |muxpart__81      |           1|       275|
++------+-----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 1     
+	   3 Input     11 Bit       Adders := 4     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 4     
+	   2 Input      6 Bit       Adders := 4     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 5     
+	   3 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               32 Bit    Registers := 6     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 7     
+	               12 Bit    Registers := 6     
+	                7 Bit    Registers := 5     
+	                6 Bit    Registers := 5     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 5     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 28    
++---ROMs : 
+	                              ROMs := 2     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 3     
+	   2 Input     32 Bit        Muxes := 6     
+	  32 Input     32 Bit        Muxes := 1     
+	  32 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	  39 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 40    
+	 458 Input     16 Bit        Muxes := 1     
+	 465 Input     16 Bit        Muxes := 1     
+	 469 Input     16 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 3     
+	  17 Input     16 Bit        Muxes := 6     
+	   7 Input     16 Bit        Muxes := 2     
+	   8 Input     16 Bit        Muxes := 5     
+	   9 Input     16 Bit        Muxes := 2     
+	   6 Input     16 Bit        Muxes := 1     
+	 328 Input     16 Bit        Muxes := 1     
+	 327 Input     16 Bit        Muxes := 1     
+	   3 Input     16 Bit        Muxes := 4     
+	  97 Input     16 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 7     
+	   6 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 13    
+	  58 Input      6 Bit        Muxes := 1     
+	  32 Input      6 Bit        Muxes := 1     
+	 257 Input      5 Bit        Muxes := 2     
+	   5 Input      5 Bit        Muxes := 1     
+	   6 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  32 Input      5 Bit        Muxes := 2     
+	 326 Input      5 Bit        Muxes := 1     
+	 387 Input      5 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 4     
+	  10 Input      4 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	 331 Input      4 Bit        Muxes := 1     
+	  59 Input      3 Bit        Muxes := 2     
+	 197 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 6     
+	 329 Input      3 Bit        Muxes := 1     
+	 331 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	 289 Input      2 Bit        Muxes := 1     
+	 193 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 43    
+	  58 Input      1 Bit        Muxes := 1     
+	 458 Input      1 Bit        Muxes := 1     
+	 465 Input      1 Bit        Muxes := 1     
+	 469 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+	 257 Input      1 Bit        Muxes := 2     
+	  59 Input      1 Bit        Muxes := 2     
+	 197 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Top_Student 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 3     
+	   3 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 7     
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 4     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+	   5 Input      1 Bit        Muxes := 1     
+Module Get_Clock__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Get_Clock__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Get_Clock__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Get_Clock__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Get_Clock__5 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module DFF__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module DFF__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module DFF__5 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module DFF__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module DFF__7 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module DFF__6 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module DFF__9 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module DFF__8 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module DFF__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module DFF 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module Audio_Capture 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
+Module Traffic_Detector 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Traffic_Light_Control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 3     
+	                6 Bit    Registers := 3     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 8     
+	   2 Input      4 Bit        Muxes := 2     
+	  10 Input      4 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module Traffic_Light_Simulation 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     11 Bit       Adders := 4     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  39 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 14    
+	 458 Input     16 Bit        Muxes := 1     
+	 465 Input     16 Bit        Muxes := 1     
+	 469 Input     16 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 1     
+	  17 Input     16 Bit        Muxes := 2     
+	   7 Input     16 Bit        Muxes := 1     
+	   8 Input     16 Bit        Muxes := 3     
+	  58 Input      6 Bit        Muxes := 1     
+	 257 Input      5 Bit        Muxes := 2     
+	  59 Input      3 Bit        Muxes := 2     
+	 197 Input      3 Bit        Muxes := 2     
+	  58 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 14    
+	 458 Input      1 Bit        Muxes := 1     
+	 465 Input      1 Bit        Muxes := 1     
+	 469 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	 257 Input      1 Bit        Muxes := 2     
+	  59 Input      1 Bit        Muxes := 2     
+	 197 Input      1 Bit        Muxes := 2     
+Module QR_Code 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module Calibrate_Frequency 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	               12 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
+Module Audio_Volume_Indicator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   9 Input     16 Bit        Muxes := 1     
+	   6 Input      7 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   6 Input      5 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module Oled_Task_B 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   6 Input     16 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+Module Oled_Task_A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   7 Input     16 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+Module Oled_Display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 3     
+	  32 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	  32 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	  32 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  32 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module Get_Clock 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Settings_Display 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module Display_Menu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  17 Input     16 Bit        Muxes := 4     
+	   2 Input     16 Bit        Muxes := 19    
+	 328 Input     16 Bit        Muxes := 1     
+	 327 Input     16 Bit        Muxes := 1     
+	   3 Input     16 Bit        Muxes := 4     
+	   4 Input     16 Bit        Muxes := 2     
+	  97 Input     16 Bit        Muxes := 1     
+	   9 Input     16 Bit        Muxes := 1     
+	   8 Input     16 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 4     
+	   2 Input      6 Bit        Muxes := 4     
+	 326 Input      5 Bit        Muxes := 1     
+	 387 Input      5 Bit        Muxes := 3     
+	 331 Input      4 Bit        Muxes := 1     
+	 329 Input      3 Bit        Muxes := 1     
+	 331 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	 289 Input      2 Bit        Muxes := 1     
+	 193 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "get_clk_20khz/output_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "get_clk_25hz/output_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "get_clk_1hz/output_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "get_clk_200hz/output_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "get_clk_0p16hz/output_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+DSP Report: Generating DSP oled_data1, operation Mode is: C+A*(B:0x18).
+DSP Report: operator oled_data1 is absorbed into DSP oled_data1.
+DSP Report: operator oled_data2 is absorbed into DSP oled_data1.
+INFO: [Synth 8-5545] ROM "traffic_junction/traffic_detector_bottom/count0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "traffic_junction/traffic_detector_bottom/maxAmp" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "get_clk_0p16hz/output_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "get_clk_20khz/output_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "get_clk_25hz/output_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "get_clk_1hz/output_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "get_clk_200hz/output_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element oled_data_reg was removed.  [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/QR_Code.v:31]
+INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "maxNoise" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "LD" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "count_5s0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "count_3s0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "output_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element settings_display/oled_data_reg was removed.  [C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Settings_Display.v:33]
+DSP Report: Generating DSP display_menu/oled_data2, operation Mode is: A*(B:0x30).
+DSP Report: operator display_menu/oled_data2 is absorbed into DSP display_menu/oled_data2.
+DSP Report: Generating DSP display_menu/oled_data1, operation Mode is: PCIN+(A:0x0):B+(C:0xffffffffffcf).
+DSP Report: operator display_menu/oled_data1 is absorbed into DSP display_menu/oled_data1.
+DSP Report: Generating DSP display_menu/oled_data1, operation Mode is: C+A*(B:0x30).
+DSP Report: operator display_menu/oled_data1 is absorbed into DSP display_menu/oled_data1.
+DSP Report: operator display_menu/oled_data2 is absorbed into DSP display_menu/oled_data1.
+WARNING: [Synth 8-3331] design Top_Student has unconnected port JC[2]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[13]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[12]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[11]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[10]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[9]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[8]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[6]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[5]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[4]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[3]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\traffic_junction/traffic_light_control/cases_reg[2] )
+INFO: [Synth 8-3886] merging instance 'i_0/traffic_junction/traffic_light_control/person_xpos_reg[6]' (FDRE) to 'i_0/traffic_junction/traffic_light_control/person_xpos_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_0/traffic_junction/traffic_light_control/person_xpos_reg[5]' (FDRE) to 'i_0/traffic_junction/traffic_light_control/person_xpos_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_0/traffic_junction/traffic_light_control/person_xpos_reg[4]' (FDSE) to 'i_0/traffic_junction/traffic_light_control/person_xpos_reg[0]'
+INFO: [Synth 8-3886] merging instance 'i_0/traffic_junction/traffic_light_control/person_xpos_reg[2]' (FDRE) to 'i_0/traffic_junction/traffic_light_control/person_xpos_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_0/traffic_junction/traffic_light_control/person_xpos_reg[0]' (FDSE) to 'i_0/traffic_junction/traffic_light_control/person_xpos_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\traffic_junction/traffic_light_control/person_xpos_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/\traffic_junction/traffic_light_control/person_xpos_reg[3] )
+INFO: [Synth 8-3886] merging instance 'i_0/traffic_junction/traffic_light_control/an_reg[1]' (FD) to 'i_0/traffic_junction/traffic_light_control/an_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_0/traffic_junction/traffic_light_control/an_reg[2]' (FD) to 'i_0/traffic_junction/traffic_light_control/an_reg[3]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/\traffic_junction/traffic_light_control/an_reg[3] )
+INFO: [Synth 8-3886] merging instance 'i_1/audio_volume_indicator/oled_data_reg[0]' (FD) to 'i_1/audio_volume_indicator/oled_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_1/oled_task_b/oled_data_reg[0]' (FD) to 'i_1/oled_task_b/oled_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_1/oled_task_a/oled_data_reg[0]' (FD) to 'i_1/oled_task_b/oled_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_1/oled_task_a/oled_data_reg[1]' (FD) to 'i_1/oled_task_b/oled_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_1/audio_volume_indicator/oled_data_reg[2]' (FD) to 'i_1/oled_task_b/oled_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_1/oled_task_b/oled_data_reg[2]' (FD) to 'i_1/oled_task_b/oled_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_1/oled_task_a/oled_data_reg[2]' (FD) to 'i_1/oled_task_b/oled_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_1/audio_volume_indicator/oled_data_reg[3]' (FD) to 'i_1/oled_task_b/oled_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_1/oled_task_b/oled_data_reg[3]' (FD) to 'i_1/oled_task_a/oled_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_1/oled_task_a/oled_data_reg[3]' (FD) to 'i_1/oled_task_a/oled_data_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\oled_task_a/oled_data_reg[4] )
+INFO: [Synth 8-3886] merging instance 'i_1/oled_task_a/oled_data_reg[5]' (FD) to 'i_1/oled_task_a/oled_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_1/audio_volume_indicator/oled_data_reg[6]' (FD) to 'i_1/audio_volume_indicator/oled_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_1/oled_task_b/oled_data_reg[6]' (FD) to 'i_1/oled_task_b/oled_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_1/oled_task_a/oled_data_reg[6]' (FD) to 'i_1/oled_task_a/oled_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_1/audio_volume_indicator/oled_data_reg[7]' (FD) to 'i_1/audio_volume_indicator/oled_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'i_1/oled_task_b/oled_data_reg[7]' (FD) to 'i_1/oled_task_b/oled_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'i_1/oled_task_a/oled_data_reg[7]' (FD) to 'i_1/oled_task_a/oled_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'i_1/audio_volume_indicator/oled_data_reg[8]' (FD) to 'i_1/audio_volume_indicator/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_1/oled_task_b/oled_data_reg[8]' (FD) to 'i_1/oled_task_b/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_1/oled_task_a/oled_data_reg[8]' (FD) to 'i_1/oled_task_a/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_1/audio_volume_indicator/oled_data_reg[11]' (FD) to 'i_1/audio_volume_indicator/oled_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'i_1/oled_task_b/oled_data_reg[11]' (FD) to 'i_1/oled_task_b/oled_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'i_1/oled_task_a/oled_data_reg[11]' (FD) to 'i_1/oled_task_a/oled_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'i_1/oled_task_a/oled_data_reg[12]' (FD) to 'i_1/oled_task_a/oled_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'i_1/oled_task_a/oled_data_reg[13]' (FD) to 'i_1/oled_task_a/oled_data_reg[14]'
+INFO: [Synth 8-3886] merging instance 'i_1/audio_volume_indicator/oled_data_reg[14]' (FD) to 'i_1/audio_volume_indicator/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'i_1/oled_task_b/oled_data_reg[14]' (FD) to 'i_1/oled_task_b/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'i_1/oled_task_a/oled_data_reg[14]' (FD) to 'i_1/oled_task_a/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'i_1/audio_volume_indicator/seg_reg[0]' (FDE) to 'i_1/audio_volume_indicator/seg_reg[3]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:39 ; elapsed = 00:04:43 . Memory (MB): peak = 1246.590 ; gain = 989.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-------------------------+--------------------------------+---------------+----------------+
+|Module Name              | RTL Object                     | Depth x Width | Implemented As | 
++-------------------------+--------------------------------+---------------+----------------+
+|Settings_Display         | oled_data                      | 8192x1        | LUT            | 
+|Settings_Display         | oled_data_reg                  | 8192x16       | Block RAM      | 
+|QR_Code                  | oled_data                      | 8192x1        | LUT            | 
+|QR_Code                  | oled_data_reg                  | 8192x16       | Block RAM      | 
+|Traffic_Light_Simulation | oled_data                      | 8192x1        | LUT            | 
+|Traffic_Light_Simulation | oled_data                      | 8192x16       | LUT            | 
+|Traffic_Light_Simulation | oled_data                      | 8192x1        | LUT            | 
+|Traffic_Light_Simulation | oled_data                      | 8192x16       | LUT            | 
+|QR_Code                  | oled_data                      | 8192x1        | LUT            | 
+|QR_Code                  | oled_data_reg                  | 8192x16       | Block RAM      | 
+|Top_Student              | display_menu/oled_data         | 2048x16       | LUT            | 
+|Top_Student              | settings_display/oled_data     | 8192x1        | LUT            | 
+|Top_Student              | settings_display/oled_data_reg | 8192x16       | Block RAM      | 
++-------------------------+--------------------------------+---------------+----------------+
+
+
+DSP: Preliminary Mapping  Report (see note below)
++-------------------------+-----------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name              | DSP Mapping                       | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------------------+-----------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Traffic_Light_Simulation | C+A*(B:0x18)                      | 11     | 5      | 11     | -      | 11     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|Display_Menu             | A*(B:0x30)                        | 13     | 6      | -      | -      | 19     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Top_Student              | PCIN+(A:0x0):B+(C:0xffffffffffcf) | 30     | 7      | 7      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|Display_Menu             | C+A*(B:0x30)                      | 13     | 6      | 7      | -      | 13     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++-------------------------+-----------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance i_1/i_0/qr_code/oled_data_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_1/i_0/qr_code/oled_data_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_1/i_0/qr_code/oled_data_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_1/i_0/qr_code/oled_data_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_2/i_0/settings_display/oled_data_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_2/i_0/settings_display/oled_data_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_2/i_0/settings_display/oled_data_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_2/i_0/settings_display/oled_data_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |Top_Student__GB0 |           1|     28393|
+|2     |Top_Student__GB1 |           1|      2804|
+|3     |Top_Student__GB2 |           1|     10771|
+|4     |muxpart__81      |           1|        53|
++------+-----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:49 ; elapsed = 00:04:54 . Memory (MB): peak = 1246.590 ; gain = 989.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:05:09 ; elapsed = 00:05:14 . Memory (MB): peak = 1352.617 ; gain = 1096.012
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |Top_Student__GB0 |           1|     28565|
+|2     |Top_Student__GB1 |           1|      2804|
+|3     |Top_Student__GB2 |           1|     10771|
+|4     |muxpart__81      |           1|        53|
++------+-----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance qr_code/oled_data_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance qr_code/oled_data_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance qr_code/oled_data_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance qr_code/oled_data_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance settings_display/oled_data_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance settings_display/oled_data_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance settings_display/oled_data_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance settings_display/oled_data_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:05:15 ; elapsed = 00:05:21 . Memory (MB): peak = 1436.590 ; gain = 1179.984
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:05:17 ; elapsed = 00:05:23 . Memory (MB): peak = 1436.590 ; gain = 1179.984
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:05:17 ; elapsed = 00:05:23 . Memory (MB): peak = 1436.590 ; gain = 1179.984
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:05:18 ; elapsed = 00:05:24 . Memory (MB): peak = 1436.590 ; gain = 1179.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:05:18 ; elapsed = 00:05:24 . Memory (MB): peak = 1436.590 ; gain = 1179.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:05:19 ; elapsed = 00:05:25 . Memory (MB): peak = 1436.590 ; gain = 1179.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:05:19 ; elapsed = 00:05:25 . Memory (MB): peak = 1436.590 ; gain = 1179.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     4|
+|2     |CARRY4     |   229|
+|3     |DSP48E1    |     2|
+|4     |DSP48E1_1  |     1|
+|5     |DSP48E1_2  |     1|
+|6     |LUT1       |    69|
+|7     |LUT2       |  1598|
+|8     |LUT3       |  1142|
+|9     |LUT4       |   725|
+|10    |LUT5       |   977|
+|11    |LUT6       |  8389|
+|12    |MUXF7      |   944|
+|13    |MUXF8      |   278|
+|14    |RAMB36E1   |     1|
+|15    |RAMB36E1_1 |     1|
+|16    |RAMB36E1_2 |     1|
+|17    |RAMB36E1_3 |     1|
+|18    |RAMB36E1_4 |     1|
+|19    |RAMB36E1_5 |     1|
+|20    |RAMB36E1_6 |     1|
+|21    |RAMB36E1_7 |     1|
+|22    |FDE_1      |    32|
+|23    |FDRE       |   713|
+|24    |FDSE       |    27|
+|25    |IBUF       |    13|
+|26    |OBUF       |    36|
+|27    |OBUFT      |     1|
++------+-----------+------+
+
+Report Instance Areas: 
++------+-----------------------------+-------------------------+------+
+|      |Instance                     |Module                   |Cells |
++------+-----------------------------+-------------------------+------+
+|1     |top                          |                         | 15189|
+|2     |  audio_capture              |Audio_Capture            |    78|
+|3     |  audio_volume_indicator     |Audio_Volume_Indicator   |   244|
+|4     |  calibrate_frequency        |Calibrate_Frequency      |   173|
+|5     |  debounced_btnC             |Debounce_Button          |     5|
+|6     |    dff_1                    |DFF_16                   |     4|
+|7     |    dff_2                    |DFF_17                   |     1|
+|8     |  debounced_btnD             |Debounce_Button_0        |     4|
+|9     |    dff_1                    |DFF_14                   |     2|
+|10    |    dff_2                    |DFF_15                   |     2|
+|11    |  debounced_btnL             |Debounce_Button_1        |     3|
+|12    |    dff_1                    |DFF_12                   |     2|
+|13    |    dff_2                    |DFF_13                   |     1|
+|14    |  debounced_btnR             |Debounce_Button_2        |     9|
+|15    |    dff_1                    |DFF_10                   |     6|
+|16    |    dff_2                    |DFF_11                   |     3|
+|17    |  debounced_btnU             |Debounce_Button_3        |     4|
+|18    |    dff_1                    |DFF                      |     1|
+|19    |    dff_2                    |DFF_9                    |     3|
+|20    |  display_menu               |Display_Menu             |  3100|
+|21    |  get_clk_0p16hz             |Get_Clock                |    55|
+|22    |  get_clk_1hz                |Get_Clock_4              |    54|
+|23    |  get_clk_200hz              |Get_Clock_5              |    54|
+|24    |  get_clk_20khz              |Get_Clock_6              |    52|
+|25    |  get_clk_25hz               |Get_Clock_7              |    55|
+|26    |  get_clk_6p25Mhz            |Get_Clock_8              |    63|
+|27    |  oled_display               |Oled_Display             |  9913|
+|28    |  oled_task_a                |Oled_Task_A              |   203|
+|29    |  oled_task_b                |Oled_Task_B              |   165|
+|30    |  qr_code                    |QR_Code                  |    16|
+|31    |  settings_display           |Settings_Display         |     5|
+|32    |  traffic_junction           |Traffic_Junction         |   872|
+|33    |    traffic_detector_bottom  |Traffic_Detector         |    75|
+|34    |    traffic_light_control    |Traffic_Light_Control    |   145|
+|35    |    traffic_light_simulation |Traffic_Light_Simulation |   652|
++------+-----------------------------+-------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:05:19 ; elapsed = 00:05:25 . Memory (MB): peak = 1436.590 ; gain = 1179.984
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 15 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:05:05 ; elapsed = 00:05:16 . Memory (MB): peak = 1436.590 ; gain = 826.355
+Synthesis Optimization Complete : Time (s): cpu = 00:05:19 ; elapsed = 00:05:25 . Memory (MB): peak = 1436.590 ; gain = 1179.984
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1508 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  FDE_1 => FDRE (inverted pins: C): 32 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+181 Infos, 50 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:05:22 ; elapsed = 00:05:29 . Memory (MB): peak = 1436.590 ; gain = 1192.898
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Joshua Goh Min Rui/Desktop/S1_13_Joshua Goh Min Rui_Thomas Joseph Lee Alba_Archive.xpr/SoundDisplay/SoundDisplay.runs/synth_1/Top_Student.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_Student_utilization_synth.rpt -pb Top_Student_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.080 . Memory (MB): peak = 1436.590 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Nov  1 09:44:31 2022...
